@@ -62,4 +62,5 @@ orderButton.addEventListener("click", function(event) {
     meat: meatSelect.checked,
     veggies: veggiesSelect.checked,
     sauce: sauceSelect.checked,
-    cheese: cheeseSelect.checked,
+    }
+  });
