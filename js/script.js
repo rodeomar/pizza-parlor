@@ -24,7 +24,7 @@ pizza.prototype.cost = function() {
   }
 
     // Calculate toppings price
-    
+
     if (this.toppings.meat) {
       toppingsPrice += 2;
     }
@@ -36,3 +36,5 @@ pizza.prototype.cost = function() {
     }
     if (this.toppings.drinks) {
       toppingsPrice += 2;
+    }
+}
