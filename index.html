@@ -4,9 +4,91 @@
 <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/style.css">
     <title>Pizza Parlor</title>
-</head>
-<body>
-  <h1>Welcome to Rio's Pizza sShop</h1>
+ </head>
+	<body>
+		<head>
+			<title>Pizza Order Form</title>
+			<script>
+				function calculateCost() {
+					// Get the size of the pizza
+					let sizeRadios = document.getElementsByName("size");
+					let size;
+					for (let i = 0; i < sizeRadios.length; i++) {
+						if (sizeRadios[i].checked) {
+							size = sizeRadios[i].value;
+							break;
+						}
+					}
+		
+					// Get the selected toppings
+					let toppingsCheckboxes = document.getElementsByName("topping");
+					let toppings = [];
+					for (let i = 0; i < toppingsCheckboxes.length; i++) {
+						if (toppingsCheckboxes[i].checked) {
+							toppings.push(toppingsCheckboxes[i].value);
+						}
+					}
+		
+					// Calculate the cost of the pizza
+					let toppingCosts = {
+						"cheese": 1.00,
+						"pepperoni": 1.50,
+						"artichoke": 2.00,
+						"anchovy": 2.50
+					};
+					let sizeCosts = {
+						"small": 8.00,
+						"medium": 10.00,
+						"large": 12.00
+					};
+					let totalCost = sizeCosts[size];
+					for (let i = 0; i < toppings.length; i++) {
+						totalCost += toppingCosts[toppings[i]];
+					}
+		
+					// Display the cost of the pizza
+					alert("The cost of your pizza is $" + totalCost.toFixed(2));
+				}
+			</script>
+		</head>
+		<body>
+			<h1>Pizza Order Form</h1>
+			<form>
+				<h2>Size:</h2>
+				<label><input type="radio" name="size" value="small">Small ($8.00)</label><br>
+				<label><input type="radio" name="size" value="medium">Medium ($10.00)</label><br>
+				<label><input type="radio" name="size" value="large">Large ($12.00)</label>
+		
+				<h2>Toppings:</h2>
+				<label><input type="checkbox" name="topping" value="cheese">Cheese ($1.00)</label><br>
+				<label><input type="checkbox" name="topping" value="pepperoni">Pepperoni ($1.50)</label><br>
+				<label><input type="checkbox" name="topping" value="artichoke">Artichoke ($2.00)</label><br>
+				<label><input type="checkbox" name="topping" value="anchovy">Anchovy ($2.50)</label>
+		
+				<br><br>
+				<button type="button" onclick="calculateCost()">Order</button>
+			</form>
+		</body>
+		</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				<!-- <h1>Welcome to Rio's Pizza sShop</h1>
 
 	<div class="dropdown">
 		<button onclick="size" class="dropbtn">Size</button>
@@ -15,4 +97,4 @@
 		</div>
 	</div>
 </body>
-</html>
+</html> --> -->
