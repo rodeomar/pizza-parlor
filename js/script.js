@@ -24,4 +24,38 @@ function pizza(sauce ,protin, veges, chees) {
   this.chees = chees  
 }
 
-function size
+function size(pizzaSize);
+  this.pizzaSize = pizzaSize;
+  this.currentId = 0;
+
+  //UI LOGIC
+
+  const pizzaParlor = new pizzaParlor();
+
+  function userChoice(e) {
+    e.preventDefault();
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
