@@ -38,3 +38,11 @@ pizza.prototype.cost = function() {
       toppingsPrice += 2;
     }
 }
+
+
+// UI Logic 
+
+const form = document.getElementById('order-form');
+const sizeSelect = document.getElementById('size');
+const meatSelect = document.getElementById('meat');
+const veggiesSelect = document.getElementById

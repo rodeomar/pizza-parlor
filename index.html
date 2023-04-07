@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1>Wlecome To Rio's Pizza Shop</h1>
+<h2>Please Place an order</h2>
 
 </select><br><br>
 <label for="size">Size:</label>
@@ -14,5 +15,35 @@
 	<option value="medium">Medium</option>
 	<option value="large">Large</option>
 </select><br><br>
+<label for="toppings">Toppings:</label><br><br>
+<select id="meat" name="meat">
+	<option value="0">No Meat</option>
+	<option value="2">Beaf</option>
+	<option value="3">Steak</option>
+	<option value="3">Chicken</option>
+	<option value="4">Vegetable</option>
+</select><br><br>
+<select id="veggies" name="veggies">
+	<option value="0">No Veggies</option>
+	<option value="1">Mushrooms</option>
+	<option value="1.5">Onions</option>
+	<option value="1.5">Peppers</option>
+	<option value="2">Olives</option>
+</select><br><br>
+<select id="sauce" name="sauce">
+	<option value="0">No Sauce</option>
+	<option value="0.5">Marinara</option>
+	<option value="0.75">Alfredo</option>
+	<option value="1">BBQ</option>
+</select><br><br>
+<select id="drinks" name="drinks">
+	<option value="0">No Drinks</option>
+	<option value="1">Soda</option>
+	<option value="2">Juice</option>
+	<option value="3">Beer</option>
+</select><br><br>
+<label for="total-cost">Total Cost:</label>
+<span id="total-cost"></span><br><br>
+<button type="submit" id="submit-btn">Place Order</button>
 </body>
 </html>
