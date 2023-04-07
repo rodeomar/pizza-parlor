@@ -42,7 +42,24 @@ pizza.prototype.cost = function() {
 
 // UI Logic 
 
-const form = document.getElementById('order-form');
-const sizeSelect = document.getElementById('size');
-const meatSelect = document.getElementById('meat');
-const veggiesSelect = document.getElementById
+const form = document.getElementById("order-form");
+const sizeSelect = document.getElementById("size");
+const meatSelect = document.getElementById("meat");
+const veggiesSelect = document.getElementById("veggies");
+const sauceSelect = document.getElementById("sauce");
+const cheeseSelect = document.getElementById("cheese");
+const fullNameInput = document.getElementById("full-name");
+const emailInput = document.getElementById("email");
+const addressInput = document.getElementById("address");
+const creditCardInput = document.getElementById("credit-card");
+const totalCostInput = document.getElementById("total-cost");
+const orderButton = document.getElementById("order-button");
+// const veggiesSelect = document.getElementById
+
+orderButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  const toppings = {
+    meat: meatSelect.checked,
+    veggies: veggiesSelect.checked,
+    sauce: sauceSelect.checked,
+    cheese: cheeseSelect.checked
