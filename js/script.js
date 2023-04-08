@@ -38,6 +38,7 @@ let totalCost = basePrice + sizePrice + toppingsPrice;
   return totalCost;
 }
 function displayReset();
+function clickTotal()
 
 
 // UI Logic 
@@ -58,12 +59,4 @@ const orderButton = document.getElementById("order-button");
 
 window.addEventListener("click", function(event) {
   event.preventDefault();
-
-  function displayReset() {
-    document.getElementById("popup").setAttribute("class", "hidden");
-    location.reload();
-}
-function popup() {
-  let totalCost
-
-}
+  });
